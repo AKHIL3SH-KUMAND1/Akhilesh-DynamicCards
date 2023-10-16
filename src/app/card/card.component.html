@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div>
+    <div class="card mb-5">
+      <div class="card-body">
+        <h5 class="card-title text-muted text-uppercase text-center">{{card.plan}}</h5>
+        <h6 class="card-price text-center">${{card.price}}<span class="period">/month</span></h6>
+        <hr>
+        <ul class="fa-ul list-style-none">
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>{{card.users}}</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>{{card.storage}}GB</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+          <li class="{{card.privateProjects[0]}}"><span class="fa-li"><i class="fas {{card.privateProjects[1]}}"></i></span>Unlimited Private Projects</li>
+          <li class="{{card.phoneSupport[0]}}"><span class="fa-li"><i class="fas {{card.phoneSupport[1]}}"></i></span>Dedicated
+            Phone Support</li>
+          <li class="{{card.freeSubdomain[0]}}"><span class="fa-li"><i class="fas {{card.freeSubdomain[1]}}"></i></span>Free Subdomain
+          </li>
+          <li class="{{card.statusReport[0]}}"><span class="fa-li"><i class="fas {{card.statusReport[1]}}"></i></span>Monthly Status
+            Reports</li>
+        </ul>
+        <div class="d-grid">
+          <a href="#" class="btn btn-primary text-uppercase">Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
